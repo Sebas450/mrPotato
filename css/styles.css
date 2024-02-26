@@ -1,0 +1,131 @@
+.cont-padre{
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    animation: pulse 10s infinite;
+}
+@keyframes pulse {
+    0% {
+      background: url(../img/fondo1.jpg);
+      background-size: cover;
+    }
+    50% {
+      background: url(../img/fondo2.jpg);
+      background-size: cover;
+    }
+    75%{
+        background: url(../img/fondo3.jpg) ;
+        background-size: cover;
+    }
+    100% {
+        background: url(../img/fondo1.jpg);
+        background-size: cover;
+      }
+  }
+
+.gorro{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 3;
+    transition: .5s;
+}
+.cont-padre:hover .gorro{
+    top: 50px;
+    transform: rotate(360deg);
+}
+.oreja-izq{
+    position: absolute;
+    top: 220px;
+    left: 750px;
+    z-index: 2;
+    transition: .5s;
+}
+.cont-padre:hover .oreja-izq{
+    left: 600px;
+}
+.oreja-der{
+    position: absolute;
+    top: 220px;
+    right: 750px;
+    z-index: 2;
+    transition: .5s;
+}
+.cont-padre:hover .oreja-der{
+    right: 600px;
+
+}
+.ojo-izq{
+    position: absolute;
+    top: 250px;
+    left: 660px;
+    z-index: 4;
+    transition: .5s;
+}
+.cont-padre:hover .ojo-izq{
+    transform: scale(1.2);
+}
+.ojo-der{
+    position: absolute;
+    top: 250px;
+    right: 660px;
+    z-index: 4;
+    transition: .5s;
+}
+.cont-padre:hover .ojo-der{
+    transform: scale(1.2);
+}
+.nariz{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 5;
+}
+.bigote{
+    position: absolute;
+    top: 425px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 4;
+    transition: .5s;
+}
+.cont-padre:hover .bigote{
+    transform: rotate(360deg);
+}
+.pie-izq{
+    position: absolute;
+    top: 535px;
+    left: 680px;
+    z-index: 2;
+    transition: .5s;
+
+}
+.pie-der{
+    position: absolute;
+    top: 535px;
+    right: 680px;
+    z-index: 2;
+    transition: .5s;
+
+}
+.papa{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 3;
+}
+.cont-padre:hover .pie-der{
+    transform: rotate(20deg);
+}
+.cont-padre:hover .pie-izq{
+    transform: rotate(-20deg);
+}
